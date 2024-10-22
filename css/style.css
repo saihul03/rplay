@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    background-image: url('./img/rplay halaman.jpg'); /* Ganti dengan path gambar Anda */
+    background-image: url('../img/rplay halaman.jpg'); /* Ganti dengan path gambar Anda */
     background-size: cover; /* Mengisi elemen dengan gambar */
     background-position: 50% 50%; 
     background-repeat: no-repeat; /* Mencegah gambar diulang */
