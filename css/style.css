@@ -9,10 +9,11 @@
     --slider-arrow-color: rgba(0, 0, 0, 0.5);
     --slider-arrow-hover: rgba(0, 0, 0, 0.8);
     --header-height: 80px; /* Tambahkan variabel untuk tinggi header */
+    --font-size : 12px;
 }
 p {
     text-align: justify; 
-    text-indent: 0.1px;
+    text-indent: 30px;
 }
 
 html {
@@ -21,7 +22,7 @@ html {
 }
 
 body {
-    background-image: url('../img/rplay halaman.jpg'); /* Ganti dengan path gambar Anda */
+    //background-image: url('../img/rplay halaman.jpg'); /* Ganti dengan path gambar Anda */
     background-size: cover; /* Mengisi elemen dengan gambar */
     background-position: 50% 50%; 
     background-repeat: no-repeat; /* Mencegah gambar diulang */
@@ -32,9 +33,13 @@ h1, h2, h3, h4, h5, h6,{
     color: var(--primary-dark);
     line-height: 1.9;
 }
+.centered {
+    width: 100%; 
+    text-align: center; /* Mengatur teks menjadi center */
+}
 .container {
     width: 100%;
-    padding: 0 15px;
+    padding: 0 5px;
     margin: 0 auto;
     max-width: 1200px;
 
@@ -162,7 +167,7 @@ section {
     width: 100%;
     height: 400px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 1px;
 }
 
 .tns-outer {
@@ -300,13 +305,13 @@ footer p {
 }
 .content-begin {
     gap: 2rem;
-    margin: 2rem auto;
+    align-items: center;
+    margin: 1rem 0;
     background: white;
     padding: 2rem;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    max-width: 1200px; /* Menambah lebar maksimal */
-    width: 90%; /* Responsif di layar besar dan kecil */
+    width:100%;
 }
 
 .content-grid {
@@ -314,15 +319,16 @@ footer p {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsif grid */
     gap: 2rem;
     align-items: center;
-    margin: 2rem 0;
+    margin: 1rem 0;
     background: white;
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width:100%;
 }
 
 .text-content {
-    padding-right: 2rem;
+    padding-right: 1rem;
 }
 
 .text-content h2 {
@@ -335,6 +341,11 @@ footer p {
 @media (max-width: 768px) {
     :root {
         --header-height: 6rem; /* Sesuaikan tinggi header untuk layar kecil */
+    }
+    .content-begin {
+        gap: 1.5rem;
+        padding: 1rem;
+        width: 95% 95%;
     }
     .content-grid {
         grid-template-columns: 1fr;
@@ -403,7 +414,7 @@ footer p {
     }
 
     .content-section {
-        padding: 1rem;
+        /* padding: 1rem; */
     }
 
     .map-container {
@@ -418,6 +429,10 @@ footer p {
     :root {
         --header-height: 6rem; /* Sesuaikan tinggi header untuk layar kecil */
     }
+    .content-begin {
+        gap: 1.5rem;
+        padding: 1rem;
+    }
     .content-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -485,7 +500,7 @@ footer p {
     }
 
     .content-section {
-        padding: 1rem;
+        /* padding: 1rem; */
     }
 
     .map-container {
