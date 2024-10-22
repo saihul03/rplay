@@ -420,9 +420,6 @@ footer p {
     .map-container {
         height: 250px;
     }
-    .tagembed-widget {
-        height: 300px; /* Atur tinggi untuk perangkat kecil */
-    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
