@@ -27,15 +27,27 @@ body {
     background-position: 50% 50%; 
     background-repeat: no-repeat; /* Mencegah gambar diulang */
 }
-h1, h2, h3, h4, h5, h6,{
+h1, h3, h4, h5, h6,{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     color: var(--primary-dark);
     line-height: 1.9;
 }
+.content-begin .text-content h2.centered {
+    text-align: center;
+    width: auto;
+    margin: 0 auto;
+    display: table;  /* Menggunakan display: table agar lebar mengikuti konten */
+    margin-bottom: 1.5rem;
+}
+
+/* Hapus atau modifikasi class .centered yang lama */
 .centered {
-    width: 100%; 
-    text-align: center; /* Mengatur teks menjadi center */
+    text-align: center;
+}
+.about-description {
+    text-align: center !important;  /* Menggunakan !important untuk memastikan override style default */
+    text-indent: 0 !important;      /* Menghilangkan text-indent untuk paragraf ini */
 }
 .container {
     width: 100%;
@@ -73,11 +85,33 @@ header {
     gap: 1rem;
 }
 
+/* Versi minimalis */
+.whatsapp-link {
+    color: var(--text-light);
+    text-decoration: none;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 0px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    /* gap: 6px; */
+    transition: all 0.3s ease;
+    background-color: rgba(37, 211, 102, 0.1);
+    border: 1px solid rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-link:hover {
+    background-color: rgba(37, 211, 102, 0.2);
+    border-color: #25D366;
+}
+
 .logo {
     width: 45px;
     height: 45px;
     background-color: white;
-    border-radius: 60%;
+    border-radius: 50%;
     padding: 0.1px;
 }
 
