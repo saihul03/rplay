@@ -98,13 +98,13 @@ header {
     align-items: center;
     /* gap: 6px; */
     transition: all 0.3s ease;
-    background-color: rgba(20, 145, 71, 0.9); /* Hijau lebih gelap dan lebih solid */
+    background-color: rgb(29, 54, 58); /*  Hijau lebih gelap dan lebih solid */
     border: 1px solid #148E47; /* Warna border lebih gelap */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Tambahkan shadow pada teks */
 }
 
 .whatsapp-link:hover {
-    background-color: rgba(37, 211, 102, 0.2);
+    background-color: rgba(20, 145, 71, 0.9);
     border-color: 1px solid #25D366;
 }
 
